@@ -8,7 +8,7 @@ a) Go the terminal and type
   ```
    sudo raspi-config
   ```
-b) This will open your raspi-config interface. Choose <b>Advanced Options</b> if no <b>Interfacing Options</b> is found else choose &nbsp;&nbsp;&nbsp;&nbsp;<b>Interfacing Options</b>. 
+b) This will open your raspi-config interface. Choose <b>Advanced Options</b> if no Interfacing Options is found else choose &nbsp;&nbsp;&nbsp;&nbsp;<b>Interfacing Options</b>. 
 
 &nbsp;&nbsp;&nbsp; <img src="https://www.raspberrypi-spy.co.uk/wp-content/uploads/2014/08/rc_cmd_main_interfacing.png"/>
 
