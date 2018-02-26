@@ -3,7 +3,7 @@
 
 This module requires your raspberry pi(RPi) <b>SPI interface</b> to be enabled for being used. For that:<br/>
 
-a) Go the terminal and type
+a) Go the terminal and type:
 
   ```
    sudo raspi-config
@@ -90,3 +90,41 @@ Then just install this node module as:
 npm install rfid-hack
 ```
 This will add the rfid-hack module to your node_modules folder
+
+Now in your working nodejs code (or by creating a new file) just following the below guideline example:<br/>
+
+<b>Simple reading</b><br/>
+
+This code waits the until the rfid tag is shown to the rfid reader
+
+```javascript
+var rfid=require('rfid-hack');
+
+rfid.read(function(err,result){
+	   if(err) console.log("Sorry, some hardware error occurred"); //some kind of hardware/wire error
+     console.log(result); //print rfid tag UID
+});
+```
+ 
+<b>Reading with time limit</b><br/>
+
+This code waits thr rfid tag to be shown to the rfid reader within a time linit, else displays timeout message. The following sample waits for 5000 ms (5 s) for the rfid reader to get rfid tag shown to it. On reaching or exceeding the time limit, the timeout message is displayed. You may change the time limit by passing the time in millisecond as the first parameter in the function "readintime".
+For example: for 1 second time limit, just pass 1000.
+
+```javascript
+var rfid=require('rfid-hack');
+
+rfid.readintime(5000,function(err,result){
+	   if(err) console.log("Sorry, some hardware error occurred"); //some kind of hardware/wire error
+	   if(result=="timeout"){ 
+	    console.log("Sorry, You timed out");  //check if time exceeded the time you passed as argument and print timeout message
+	   }else{
+	     console.log(result); //print rfid tag UID
+	   }
+});
+```
+Now just run your node js file as and see the output in the terminal:
+
+```
+ node /file_name
+```
