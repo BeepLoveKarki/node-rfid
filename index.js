@@ -31,7 +31,7 @@ var read=function(callback){
 
 var readintime=function(time,callback){
 	  if(!arguments[0]&& !arguments[1]) throw new Error("No any arguments provided");
-	  if(argumemts[0] && !arguments[1]) throw new Error ("No callback function provided");
+	  if(arguments[0] && !arguments[1]) throw new Error ("No callback function provided");
 	  if(typeof arguments[0]!='number') throw new Error("First argument of the function not type int");
 	  readtime=time;
       callrfid(2,callback);
