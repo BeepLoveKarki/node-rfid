@@ -101,7 +101,7 @@ This code waits the until the rfid tag is shown to the rfid reader
 var rfid=require('rfid-hack');
 
 rfid.read(function(err,result){
-	   if(err) console.log("Sorry, some hardware error occurred"); //some kind of hardware/wire error
+     if(err) console.log("Sorry, some hardware error occurred"); //some kind of hardware/wire error
      console.log(result); //print rfid tag UID
 });
 ```
