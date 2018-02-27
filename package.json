@@ -1,0 +1,52 @@
+{
+  "_from": "node-rfid@^1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-F1RnpibagoVX8/OtDK7rzrVdlYDfK/NsYsZcZI7CLu6sqjcO+tYGi7NM6VSiTErO6MA5aiaGo7CMfPuWLtA5Qg==",
+  "_location": "/node-rfid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "node-rfid@^1.0.3",
+    "name": "node-rfid",
+    "escapedName": "node-rfid",
+    "rawSpec": "^1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-rfid/-/node-rfid-1.0.6.tgz",
+  "_shasum": "d43a4bc89df9300750391297ce323aa95a010cde",
+  "_spec": "node-rfid@^1.0.3",
+  "_where": "C:\\project",
+  "author": "Electrocoders <coderselectro@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/BeepLoveKarki/node-rfid/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A node module to interface rc522 rfid reader with raspberry pi via node js!!!",
+  "homepage": "https://github.com/BeepLoveKarki/node-rfid#readme",
+  "keywords": [
+    "rfid",
+    "node-rfid",
+    "rfid-reader",
+    "rfid-node",
+    "rc522-reader",
+    "rc522"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "node-rfid",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeepLoveKarki/node-rfid.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.7"
+}
