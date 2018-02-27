@@ -3,7 +3,7 @@
 
 This module supports both Raspberry Pi (RPi) and BeagleBone Black development boards. 
 
-It requires your RPi (or BeagleBone Black) <b>SPI interface</b> to be enabled for being used. For that:<br/>
+It requires your RPi (or BeagleBone Black) <b> SPI interface</b> to be enabled for being used. For that:<br/>
 
 a) Go the terminal and type:
 
